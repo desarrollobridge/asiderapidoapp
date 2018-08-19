@@ -1,0 +1,188 @@
+html,body{
+/*background:#101317;*/
+}
+
+#main-wrapper{
+margin-top:1%;
+width:1150px;
+}
+
+#chosen-field input[type="text"]{
+height:auto;
+}
+
+.merchant-selection-wrap{
+}
+
+.preloader{
+display:block;
+position:fixed;
+z-index:9999;
+top:0;
+right:0;
+height:64px;
+width:64px;
+border:1px solid #EEEEEE;
+background:url("../assets/images/Preloader_2.gif") no-repeat;
+}
+
+.menu ul li{
+list-style:none;
+}
+
+.menu{
+border-bottom:1px solid #ccc;
+}
+
+.menu ul,
+.menu ul li{
+padding:0;
+margin:0;
+}
+
+.menu ul li{
+display:inline-block;
+padding:10px;
+}
+
+.menu ul li a{
+color:#666;
+}
+
+.menu ul li.active a{
+color:#fff;
+background:#00B279;
+padding:3px;
+
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px; /* future proofing */
+-khtml-border-radius: 3px; /* for old Konqueror browsers */
+}
+
+.pad10{
+padding:10px 15px;
+}
+.block{
+display:block;
+}
+
+.inlineblock{
+display:inline-block;
+}
+
+.pad5{
+padding:5px 10px;
+}
+
+#chosen-field input[type="text"]{
+height:auto;
+}
+
+.clear{
+clear:both;
+}
+
+.my-thumb,
+.thumb
+{
+max-width:80px;
+margin-left:10px;
+}
+
+.module-title{
+display:block;
+font-size:14px;
+color:#666;
+}
+
+.concat-text{
+width: 200px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+display:block;
+}
+
+.send-a-push{
+font-size:20px;
+color:#00B279;
+text-align:center;
+display:block;
+}
+
+#translation-save-wrap{
+padding: 10px 20px;
+text-align: right;
+}
+
+.is-sticky #translation-save-wrap{
+background:#fff;
+width: 90%;
+z-index: 100;
+border-bottom:1px solid #ccc;
+}
+
+.tag{
+background:#33a17e ;
+color:#fff;
+}
+span.tag{
+display: inline-block;
+padding: 3px 8px;
+text-align: center;
+min-width: 90px;
+}
+span.tag.failed,
+span.tag.canceled,
+span.tag.cancelled,
+span.tag.declined,
+span.tag.draft,
+.tag.cancelled,
+tag.failed,
+.failed,
+.declined
+{
+background:#e53935;
+}
+.tag.unassigned,
+span.tag.pending
+ {
+background:#999;
+}
+.tag.assigned {
+/*background:#fc8344 ;*/
+background:#4c9ec0;
+}
+.tag.successful,
+span.tag.successful
+{
+background:#2c9f2c  ;
+}
+.tag.started {
+background:#ba68c8 ;
+}
+.tag.inprogress{
+background:#ec391c ;
+}
+.tag.sign{
+background:#f6bf00 ;
+}
+.tag.note{
+background:#3399FF;
+}
+.tag.photo{
+background:#658d78;
+}
+
+#table_list i.fa{
+font-size:18px;
+}
+
+.hide{
+display:none;
+}
+
+.top20{
+margin-top:20px;
+}

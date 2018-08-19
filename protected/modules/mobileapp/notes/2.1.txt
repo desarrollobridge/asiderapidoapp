@@ -1,0 +1,252 @@
+fixed saving of commision_type in order table
+fixed not saving order_id_token fields
+fixed final amount when applying voucher
+fixed pop over food category
+fixed getting of delivery fee
+fixed payment methods in merchant information
+fixed remove delivery asap if merchant is close
+fixed add facebook profile photo
+fixed ios ringtone
+fixed ios push icon
+fixed android 7 push icon
+fixed push notification hangs when viewing map page
+
+new - add lazy load for search restaurant and browse restaurant
+new - add settings in backend for location accuracy
+new - search by location city / area
+new - search by state/city
+new - search by postal code/zipcode
+new - add facebook app id in settings 
+new - add clear cart
+new - combined cart food item
+new - add minimum order tables
+new - add google login
+new - add options to add pages to the app with multi language
+new - track order map include merchant address
+new - add request location authorization when using get current location fixed for android 6,7
+new - add merchant menu background header
+new - add push icon needed for android 7
+new - add push picture for android 5,6 and 7
+new - add upload profile picture
+
+update - push plugin to use version 1.10.5
+update - google map plugin
+update - update config.xml with new icons and splash screen
+update - use new phonegap version cli-7.0.1
+
+changes - remove pop over food  category
+changes - change ringtone file
+changes - remove plugin cordova-plugin-fastrde-checkgps
+changes - remove plugin cordova-dialog-gps.git
+
+
+TABLE CHANGES
+
+ - add new table mt_mobile_pages
+ 
+ 
+remove
+mollie
+Ipay88
+moneris
+sms libonet
+ipay
+pi pay
+hubtel sms
+hubtel payment
+extra delivery charges
+
+ 
+ add google analytic 
+ https://github.com/cmackay/google-analytics-plugin
+ https://www.npmjs.com/package/cordova-plugin-google-analytics-ka
+ cordova plugin add com.cmackay.plugins.googleanalytics
+ 
+ https://www.npmjs.com/package/cordova-plugin-google-analytics
+ https://github.com/danwilson/google-analytics-plugin = ok
+ 
+UA-109143364-1
+http://www.google.com/analytics/
+
+
+case "page-home":
+case "page-browse":
+toastMsg('track view');
+ANALYTICS
+
+ 
+ android 7 add icon
+ android pic supports 5,6 and 7
+ 
+
+https://github.com/mercadopago/px-hybrid
+http://mercadopago.github.io/px-hybrid/ 
+https://github.com/mercadopago/px-hybrid/issues/14
+ 
+<gap:plugin name="cordova-plugin-camera" source="npm" spec="2.4.0" />
+<gap:plugin name="cordova-plugin-file-transfer" source="npm" spec="1.6.2" /> 
+
+ Minimum Order Table not yet added
+ add facebook profile photo 
+ add facebook settins in backend
+ 
+ add faq and custom page
+ 
+ 5- And the possibility to save as favorites the restaurants and
+  separate their products (whenever available) in a favorite section.
+
+- Make the “Select address from map” also available on the main page.
+ Not only by address and GPS, but also by dragging the pin on the map and then confirm to show restaurants.
+ 
+add options for location accuracy getLocationAccuracy()
+ 
+https://onsen.io/v1/guide.html#using-lazy-repeat-or-infinite-scrolling 
+
+Ok, so as I have contacted you before, I need for the app the same 
+feature that’s on the website, where people have to confirm they’re over 
+18 before they proceed. How can I achieve that on the app?
+
+hello pro iwant ask why customer cant see real img for driver see 
+img: https://e.top4top.net/p_559wftcm1.png https://f.top4top.net/p_55924pf92.png
+
+
+distance not computing in line
+if ( $this->data['transaction_type']=="delivery" && is_numeric($merchant_delivery_distance) ){		
+
+
+Then the time zone on my server would be the same for Web orders and orders from the Mobile App. 
+On the Web, there is no A.S.A.P. choice when restaurants are in Pre-Order mode because they are closed,
+ but on the Mobile App, the A.S.A.P. function is still available.
+
+ 
+ hi basti, i’m glad you are updating this app for the search by area/neighborhood. please also add the ajax search 
+ for restaurant result and food items. so user scroll down more restaurants will 
+ loaded for restaurant list page and same for food menu item page. so we don’t have to 
+ limit the number of search result to only 50 restaurants and the app can also load much faster too. 
+ hope this request will be in this update! thanks
+ 
+ 
+ Possible to save the cart even when closing app and then coming back? Possible to save 
+ if accidentally going back to restaurant list (lets say that someone clicks back by accident 
+ after adding 10 items. Frustrating. Or if they change their mind and then want to come back to finish order.
+  Customers will get annoyed with it being lost now.
+ 
+ 
+ combined cart item
+ 
+ You could include in the next update, the multi-language FAQS, 
+ the terms and conditions (which are mandatory in Android, include within the Apps) 
+ and a customer support chat.
+ 
+ You have customers that do not understand how to add a credit card when using offline credit card
+Little + on the top right really needs to have a text explanation as to what to do. Can you add some
+ text to tell people what to do and then once you add the card tell them to tap the card number and then select card?
+ 
+ Will you be able to add a message to the menu page of the merchant, below the restaurant title? 
+ (The merchant can edit this announcement in the back-end, Just as they can edit Holiday Close Message)
+
+So merchant can publish some important reminder about their restaurant, such as: order deadline, 
+delivery time information. So that customers can clearly know when to order meals. 
+Especially for some restaurants that set the order deadline for delivery order.
+
+I have provided some examples: 1. https://screenshot.net/zh/nmexioy 2. https://screenshot.net/zh/ngxzidj
+
+
+This is what it should look like going by the driver app 
+http://prntscr.com/gzacn6 That way the customer can see the driver 
+going to restaurant before coming to him
+
+ 
+ TEST CODE
+ 
+ /*TEST CODE*/
+
+var MyDelegate = {
+  createItemContent: function(index, oldContent) {      	
+  	console.log("Created item #" + index);
+    var $element = $('<div class="results-'+index+'">loading...</div>');
+    searchByRestaurant(index);
+    return $element[0];    
+  },
+  calculateItemHeight: function(index) {
+  	//dump("calculate h : "+ index);
+    return 60;
+  },
+  countItems: function() {
+    return 200;
+  },
+  destroyItemContent: function(index, element) {
+    console.log("Destroyed item " + index);
+  }
+}
+
+function searchByRestaurant(index)
+{
+	          
+   action = "searchTest";
+   params = 'page='+ index;
+      
+   dump(ajax_url+"/"+action+"?"+params);
+   
+   ajax_lazy = $.ajax({
+		url: ajax_url+"/"+action, 
+		data: params,
+		type: 'post',                  
+		async: false,
+		dataType: 'jsonp',
+		timeout: 6000,
+		crossDomain: true,
+	 beforeSend: function() {			 	
+	},
+	complete: function(data) {							
+	},
+	success: function (data) {	  	   
+	   if (data.code=1){
+	   	   dump(data);	   	   
+	   	   $(".results-"+ index).html( index+" :" + data.details.restaurant_name );	   	   
+	   }
+	},
+	error: function (request,error) {	        
+		hideAllModal();				
+		dump(getTrans("Network error has occurred please try again!",'network_error'));
+	}
+   });       	
+}
+
+
+
+
+
+cordova.plugins.diagnostic.requestLocationAuthorization(function(status){
+	    switch(status){
+	        case cordova.plugins.diagnostic.permissionStatus.NOT_REQUESTED:
+	            toastMsg("Permission not requested");
+	            return;
+	            break;
+	        case cordova.plugins.diagnostic.permissionStatus.GRANTED:
+	            toastMsg("Permission granted");
+	            break;
+	        case cordova.plugins.diagnostic.permissionStatus.DENIED:
+	            toastMsg("Permission denied");
+	            return;
+	            break;
+	        case cordova.plugins.diagnostic.permissionStatus.DENIED_ALWAYS:
+	            toastMsg("Permission permanently denied");
+	            return;
+	            break;
+	    }
+	}, function(error){
+	    toastMsg(error);
+	    return;
+	});
+
+
+'image'=>websiteUrl()."/protected/modules/mobileapp/assets/images/icon.png",
+'style'=>"picture",
+'picture'=>'http://bastisapp.com/kmrs-dev/assets/images/logo-desktop.png',
+"summaryText"=> "The internet is built on cat pictures",
+	
+
+remove
+<gap:plugin name="cordova-plugin-fastrde-checkgps" source="npm" />
+	<gap:plugin spec="https://github.com/rodrigo-martinezd/cordova-dialog-gps.git" source="git" />

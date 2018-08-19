@@ -1,0 +1,240 @@
+fixed search to wildcard conditions
+fixed category name stripslashes
+fixed distance unit not clearing old distance unin in search results
+fixed re-order not working if save cart to database is on
+fixed can re order if the merchant close store is enabled
+fixed cannot re-order if merchant disabled ordering
+fixed re-order should not work if merchant status is not active
+fixed cannot re-order if order is place in web show error message
+fixed customer can re-order even if merchant disabled ordering
+fixed remove changes address if transaction type is pickup/dinein in cart page
+fixed browse restaurant search by restaurant name use wildcard query
+fixed browse and search page to display service type and payment options
+fixed filter by services
+fixed transaction type not null when first load of cart
+fixed remove change address here if transaction is pickup/dinein
+fixed tips
+fixed 2 flavor not adding addon items
+fixed increase +and- button icon
+fixed offline bank deposit instructions
+fixed fax not sending
+fixed can re-order if merchant is not published
+fixed booking table not saving client_id
+new - use new templating functions
+new - add loading page before the app goes to main menu
+new - add force Default Language in mobileapp backend settings
+new - use new translation method in mobileapp and backend
+new - add new options for Get Current location results
+new - add software version in page settings
+
+TABLE CHANGES
+
+mt_client - XXXX
+  - mobile_device_platform
+  - mobile_device_id
+  - mobile_enabled_push
+  - mobile_country_code_set
+  
+  
+mobile app table
+- mobile_broadcast
+- mobile_push_logs
+- mobile_registered
+- mobile_cart
+- receive_post
+
+missing Disabled Table booking
+missing Make menu private 
+  
+truncate table mt_order;
+truncate table mt_order_delivery_address;
+truncate table mt_order_details;
+truncate table mt_order_history;
+truncate table mt_points_earn;
+truncate table mt_points_expenses;
+truncate table mt_payment_order;
+truncate table mt_sms_broadcast_details;
+truncate table mt_email_logs;
+truncate table mt_mobile_push_logs;
+truncate table mt_email_logs;
+truncate table mt_sms_broadcast_details;
+truncate table mt_bookingtable;
+truncate table mt_package_trans;
+truncate table mt_withdrawal;
+truncate table mt_invoice;
+truncate table mt_bookingtable_history;
+truncate table mt_fax_broadcast;
+
+
+RMOVE ANDROID IN CONFIG XML
+AND ADDRESS FROM JS CODE
+
+clientRegistration()
+
+FunctionsV3::getLanguageList(false)
+$set_lang_id=getOptionA("set_lang_id");
+if ( !empty($set_lang_id)){
+	$set_lang_id=json_decode($set_lang_id);
+}
+
+display city only
+
+PUSH = mobile_push_logs
+Function notifyCustomerOrderStatusChange
+
+good to make all the +, – buttons more bigger for finger touch and increase/decrease qty with button touch/clicks..
+ (currently have to enter qty number).
+
+ 
+ Just to remind you the google analytic and pull to refresh feature in the coming update…cheer
+
+Array
+(
+    [enter_your_location] => Array
+        (
+            [en] => Enter your location
+            [1] => Ilagay ang lokasyon
+            [2] => x
+            [4] => Enter your location
+        )
+
+    [use_my_location] => Array
+        (
+            [en] => Use my current location
+            [1] => Use my current location
+            [2] => x
+            [4] => Use my current location
+        )
+    
+
+        2) If can not do the above
+         “1)” is it posible for a new user to have his location adress from the search
+         bar be auto fill in the register form and be ask the user if this is the right deliver address?
+
+
+http://stackoverflow.com/questions/25419879/using-ajax-to-send-json-to-an-action-parameter-is-null-returns-internal-server
+
+
+for the offline bank deposit mobile app, customer only get receipt after checkout but did not 
+get 2nd email that inform bank details. how to enable this in mobile app? Thanks :)
+
+
+define change as mandatory, because when the
+ customer selects cash on delivery as a payment means the change should be mandatory.
+
+
+also, for the current menu categories popup, when trying to scroll up the categories, 
+it scrolls the menu item page underneath it.
+https://gyazo.com/9a8c94d4705c48f024a32471abff91d5
+
+
+when app is on map view, then push notif arrive, it will make the app stuck. back, view and cancel button unclickable.
+
+
+add client_Id in booking table
+
+
+5) We added a tiny hot pepper icon image to food item to indicate the food is “hot’. it shows okay on menu list page. but in the item detail page, it did not (instead of showing the html codes).
+https://gyazo.com/35785fe0cd8815ab1edb7f0d9afbb1ef (this one is good) https://gyazo.com/eb999b018f19cb0c1ee2b186abf4b1ea (not good, did not show hot pepper icon image) 
+
+3) When use “Offline Credit Card”, the steps are very confusing… it went to the screen with 
+card number only on the page.. had to click it to get a popup on “Use this card” and “Edit this card”.
+ would be better to have checkbox along with two buttons on the pages (see screenshot below);
+  then customers know clearly how to do without guessing or confusing.
+https://gyazo.com/620ec3841754a85b2b45f2ecbb8ddc5d
+
+Actually the best way is to show the credit card to be chosen on the same page (without going to another new page).
+
+6) menu category list scroll up issue. I mentioned in one of previous posts.. but there is a new finding. look like it can be scrolled up when first time approaches it. After clicking a menu category, then back to the menu category list, it will scroll up the background menu food items, not the menu categories that are supposed to be scrolled up.
+https://gyazo.com/12284cf58aa11e4f73b11586696e37d8
+
+
+user can still make order when the merchant setting is close or disabling order when they click ‘click here to reorder’
+
+Hi mate, There is a problem with the push notifications. Customers are still 
+getting them in there phones even if they turn them off thro the settings how we can fix this?
+
+
+When Disable Ordering from Merchant APP, 
+is there way to display “Sorry, we are not taking orders right now,
+ please check back in few minutes” somewhere visible. At the moment,
+ a customer would not know why the ADD to order button displaying (Confusion).
+ 
+ 
+Yes! Let the customer in the app have a pop-up come up asking to rate the driver after the status of
+ order has been set to succesfull (or something else).
+  If it’s placed through the website let is sent out a e-mail asking to rate the driver. 
+  And for merchant just through the order taking app.
+  
+  
+Think in you can add a serch option that pulls merchants that are open at this 
+time in the the browse restaurant area in next update?  
+
+https://s11.postimg.org/xo8vkhn9f/webcheckout.png 
+https://s18.postimg.org/79nlb7449/appcheckout.png
+
+
++ Google Login (lots of users using android phones have google accounts)
+
+
+The problem with the push notifications. Customers are 
+still getting them in their phones even if they turn them off thro the settings how we can fix this?
+
+
+When we can have customers can register/sign in by phone not by mail
+
+
+Can you add contact link in mobile app ? so customers can contact 
+through mobile applications without having to website
+
+
+also for customer can make order when clicking reorder button eventhough
+ merchant has disabled the ordering. pls provide a quick fix
+ 
+ 
+ https://drive.google.com/file/d/0B2xxiQEGeS68VnJuMjBwUmNmYlk/view?usp=sharing
+ https://drive.google.com/file/d/0B2xxiQEGeS68Q1hZU1JfX29wTGc/view?usp=sharing
+ https://drive.google.com/file/d/0B2xxiQEGeS68Q0JZNVhDdmlaUTg/view?usp=sharing
+
+
+Basti, I’m using the shippingrate table, to calculate the delivery value by distance. 
+I have a fixed delivery price and the table value.
+However, in the mobile application the user is only informed in the cart about the 
+fixed delivery price and not the price of the shippingrate table, the price of the shippingrate
+is calculated only when the order closes ..
+This is wrong because this price must be informed before Close the order so there are no surprises in the final price ..
+
+ 
+ re order not working
+ 
+ 
+ https://github.com/mercadopago/px-hybrid
+ http://mercadopago.github.io/px-hybrid/
+ 
+ 
+  1. Customer can reset their password through sms not by mail if their forget their password 
+  2. Signup by phone no not by email (very very important please add this) 3.Add contact page in mobile app 
+  
+  
+https://drive.google.com/file/d/0B2xxiQEGeS68VnJuMjBwUmNmYlk/view?usp=sharing https://drive.google.com/file/d/0B2xxiQEGeS68Q1hZU1JfX29wTGc/view?usp=sharing https://drive.google.com/file/d/0B2xxiQEGeS68Q0JZNVhDdmlaUTg/view?usp=sharing  
+
+
+fax not sending
+
+Of course i did. Uploaded and overwrited existed files. 
+When restaurant closed, I can not place orders now, but when not published/inactive, i can place orders too.
+
+
+Is it possible to include gallery images that are added in food item so that they also show in mobile like they do on desktop?
+
+
+Hope to see analytic for app in the coming update also register/signup by phone no
+
+
+Hi Basti, https://www.mealsparadise.com/menu-n-e-food-express. 
+Please visit this link i want same view of dish icon with item in mobile app.. if possible please let me know ..
+
+
+Hi, Basti, Is Order sms Verification Enable in Mobile APP. If Yes please
+ let me know how i can enable it. Because currently Order sms verfication
+  working on web app but not working on Mobile APP. How I can enable it.

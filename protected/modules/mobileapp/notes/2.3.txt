@@ -1,0 +1,54 @@
+fixed - lazy load hangs when loading more than 300 records
+fixed - lazy load for food item
+new   - add app version parameter on every request to determine the version of the app
+new   - add back compatibility with old version 2.0
+new   - add test api to check if the api is working
+
+UPDATE INSTRUCTION:
+The following files has been changed in version 2.3
+
+Mobile app files
+www/js/app.js
+
+Modules
+modules/mobileapp/controllers/ApiController.php
+
+Language file
+added 1 new translation $lang['Click here to test your api']='';
+
+
+remove
+mollie
+Ipay88
+moneris
+sms libonet
+ipay
+pi pay
+hubtel sms
+hubtel payment
+extra delivery charges
+
+
+
+Hi, Basti, Is Order sms Verification Enable in Mobile APP. If Yes please 
+let me know how i can enable it. Because currently Order sms verfication
+ working on web app but not working on Mobile APP. How I can enable it.
+ 
+
+ https://github.com/danwilson/google-analytics-plugin/issues/304
+ 
+ 
+ https://medium.com/the-web-tub/sneak-peeking-1-2-2-lazy-repeat-or-infinite-scrolling-30604304467e
+ https://community.onsen.io/topic/1456/how-to-implement-lazy-load-on-large-list-with-links/6
+ 
+ http://imakewebthings.com/waypoints/shortcuts/infinite-scroll/
+ 
+ - At least on Android, when adding to the cart with instructions/comments
+  containing single or double quotes, the cart then shows as empty.
+  
+  
+  https://github.com/Taracque/cordova-plugin-braintree
+  
+  
+  https://github.com/fogfish/cordova-plugin-googlemaps/tree/v1.4.5-iOS11
+  https://github.com/fogfish/cordova-plugin-googlemaps.git

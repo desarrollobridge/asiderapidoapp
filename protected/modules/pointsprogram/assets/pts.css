@@ -1,0 +1,136 @@
+ul#simpletabs {
+list-style-type: none;
+padding: 0;
+/*text-align: center;*/
+border-bottom:1px solid #ddd;
+}
+
+ul#simpletabs li {
+display: inline-block;
+padding: 8px 20px;
+cursor: pointer;
+color:#666;
+border:1px solid #ddd;
+border-bottom:none;
+}
+
+ul#simpletabs li:hover {
+}
+
+ul#simpletabs li.active {
+color:#3399FF;
+border-top:1px solid #f75d34;
+}
+
+ul#tab {
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-top:12px;
+}
+
+ul#tab li,
+.mytable.pts_redeem_wrap
+{
+display: none;
+}
+
+
+ul#tab li.active {
+display: block;
+}
+
+.points-total-wrap{
+background:#F9F9F9;
+padding:20px 30px;
+border:1px dashed #DDDDDD;
+text-align:center;
+}
+
+.points-total-wrap p,
+.points-total-wrap h4
+{
+margin:0;
+padding:0;
+padding-bottom:8px;
+}
+
+.points-total-wrap p.small{
+font-size:12px;
+color:#999999;
+}
+
+.points-total-wrap h4{
+font-size:30px;
+color:#FF6600;
+}
+
+.points-total-wrap .mytable .col{
+float: left;
+margin-right: 20px;
+padding: 5px 15px;
+border-right:1px solid #ddd;
+}
+
+.points-total-wrap .mytable .col.last{
+border-right:none;
+}
+
+.pts_frm span{
+color:#FF6600;
+font-weight:bold;
+}
+
+.redeem-wrap{
+margin-bottom:10px;
+}
+
+/*
+.redeem-wrap input[type="text"]{
+color: #666666;
+display: block;
+margin: auto auto 8px;
+padding: 5px 10px;
+width: 90%;
+border:1px solid #ccc;
+}*/
+
+.redeem-wrap .a
+{
+float:left;
+width:60%;
+}
+
+.redeem-wrap .b{
+float:right;
+width:39%;
+}
+
+.redeem-wrap p{
+color: #666;
+font-size: 13px;
+margin: 0 0 3px;
+padding: 0;
+text-align: center;
+}
+.redeem-wrap p span,
+.redeem-wrap .mytable .pts_amount
+{
+color:#FF6600;
+font-weight:bold;
+padding-left:5px;
+}
+
+.redeem-wrap .mytable .pts_amount{
+padding-left:0;
+}
+
+.redeem-wrap .mytable{
+width:50%;
+margin:auto;
+/*padding-left:15px;*/
+}
+
+.redeem-wrap .mytable .pts_points{
+font-weight:bold;
+}

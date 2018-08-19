@@ -1,0 +1,176 @@
+@media only screen and (max-width : 1350px) 
+{
+
+#layout_1 .topx{
+background:red;
+}
+
+}
+
+
+@media only screen and (max-width : 1024px) 
+{
+
+#layout_1 .topx{
+background:orange;
+}
+#layout1_top .search-team-wrap,
+.center-top-logo
+{
+display:none;
+}
+
+#layout1_top .text-right{
+width:100%;
+display:block;
+position:relative;
+}
+
+.back-dashboard{
+display:none;
+}
+
+}
+
+
+@media only screen and (max-width : 970px) 
+{
+
+#layout_1 .topx{
+background:green;
+}
+
+.dashboard-work-area .content_1,
+.dashboard-work-area .content_3,
+.dashboard-work-area .content_2
+{
+display:none;
+width: 100%;
+position: inherit;
+margin-left: 0;
+margin-right: 0;
+top:40px;
+}
+
+.dashboard-work-area .content_2,
+.dashboard-tab
+{
+display: block;
+}
+
+.blue_panel #calendar{
+margin-left:10px;
+}
+
+.content_1 a.task-details{
+display:block;
+}
+.new-task .map1{
+margin-top:90px;
+}
+
+.parent-wrapper .content_1.white{
+z-index:100;
+display:none;
+}
+
+.parent-wrapper .content_main{
+width:100%;
+margin-left:0;
+margin-right:0;
+}
+.nav-menu{
+display:block;
+}
+
+
+}
+
+@media only screen and (max-width : 750px) 
+{
+
+#layout_1 .topx{
+background:red;
+}
+
+#layout_1 ul.menu li a{
+font-size: 25px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#layout1_top .text-right{
+text-align:center;
+}
+#layout_1 .green-button{
+font-size:12px;
+}
+#layout_1 ul.menu{
+width:auto;
+}
+
+.new-task input[type="text"]
+{
+margin-bottom:10px;
+}
+.new-task #email_address{
+margin-top:10px;
+}
+
+.new-task .map1{
+margin-top:20px;
+}
+.left-menu ul li{
+padding:10px;
+}
+.left-menu ul li a{
+font-size:16px;
+}
+
+.panel.panel-default.text-muted.top20{
+width:100% !important;
+}
+
+.profile-photo{
+position:relative;
+right:0;
+margin-top:8px;
+float:none;
+}
+
+
+}
+
+@media only screen and (max-width : 480px) 
+{
+
+#layout_1 .topx{
+background:orange;
+}
+.nav_option a{
+display: block;
+margin-bottom: 5px;
+text-align: center;
+}
+#layout_1 ul.menu li.li-hide,
+.track-details-wrap
+{
+display:none;
+}
+.track-map-parent{
+width:90%;
+}
+
+
+}
+
+
+@media only screen and (max-width : 320px)
+{
+
+#layout_1 .topx{
+background:#ccc;
+}
+
+
+}

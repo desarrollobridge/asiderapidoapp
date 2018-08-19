@@ -1,0 +1,31 @@
+
+
+1.  fixed the open,close and pre-order tag on search result and browse restaurant
+during translation
+
+$tag='';
+if ($open==true){
+	$tag=$this->t("open");
+	if ( getOption( $val['merchant_id'] ,'merchant_close_store')=="yes"){
+		$tag=$this->t("close");
+	}
+} else  {
+	$tag=$this->t("close");
+	if (getOption( $val['merchant_id'] ,'merchant_preorder')==1){
+		$tag=$this->t("pre-order");
+	}
+}			 		
+
+
+2. fixed scroll issue on browse restaurant and search results page
+
+3. fixed cannot back to previous page on receipt page
+
+
+4. add contact number on profile
+
+5. auto fill contact number during checkout when selecting from address book
+
+6. fixed nan value on cart when selecting item with no price
+
+7. fixed cannot select on sub item on different sub item category

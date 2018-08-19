@@ -1,0 +1,59 @@
+- fixed checkout when using search by location
+- fixed order change is required when transaction type is pickup and dinein
+- fixed checkout invalid token during first time checkout
+- fixed first time checkout using dinein its showin shipping address instead of payment options
+- fixed facebook signup and google earn points
+- fixed food category not showing in receipt
+- fixed checking of hash key
+- fixed reviews not showing reply from merchant
+- fixed reviews customer avatar
+- new - add cancel order confirmation when going back to previous page
+- new - offers add applicable to transaction type
+- new - add sponsored tag in search results and browse resto
+- new - add new code for points addon version 2.0
+- new - add purifier for customer registration to prevent xss injection
+- new - add option to edit and delete reviews
+- new - add menu tabs 
+- new - add photo gallery
+- new - add checking of delivery time if pre-order
+new - add photos and description in food category
+new - add dish icon in food category
+new - include advanced search 
+
+Mate should be better if any addon messaging both merchant and customer
+
+missing isMerchantcanCheckout
+validateSellLimit
+
+8.) There is no “Sponsored” ribbon in mobile app.
+
+5) There is no “Cancel Order” option from customer side. If I want to cancel order then how can I cancel them ?
+
+4) There is no “Information”, “Voucher” section for Merchant in App.
+
+3) There is no search product bar in app. Like we have search product bar in website.
+
+
+https://prnt.sc/ihn3l3
+
+bug on pay on delivery when it commission 
+
+How to display voucher code in app browse restaurant
+
+
+1) i basti how can we add guest checkout on the mobile app, because there is an error every time order using login with Fb.
+
+
+category is  missing in receipt
+
+
+1. Hi mate is there any possible to add sponcered ribbon in the mobile app?
+
+
+Hi Mate, There is no delete/edit option for review in mobile 
+like in web and also whenever anyone reply it only show in web but not in mobile
+
+And also there is no Information, Promo section in mobile just like in web. 
+So that customer can see Information and Voucher. If possible can you 
+tell how to add this in Merchant info section, because these basic
+ things are very important and also the Edit/Delete and Reply of review.

@@ -1,0 +1,10 @@
+
+
+1. fixed order addon item and notes not inserting correctly on database
+2. fixed search results layout and browse restaurant
+3. fixed food item layout
+4. fixed pre order status tag, it shows open even if the merchant has pre order
+5. fixed tax if food item is non taxable
+6. fixed food item non taxable not saving on database
+7. fixed notes not adding on merchant receipt panel as well as receipt
+8. fixed formating of total price

@@ -1,0 +1,5 @@
+
+
+1. add offers on search results and browse restaurant
+2. remove checking of net connection always set to true
+3. remove default set address "970 N Western Ave, Los Angeles, CA, United States"

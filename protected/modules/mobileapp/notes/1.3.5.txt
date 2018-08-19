@@ -1,0 +1,108 @@
+1. new  - add new menu which display only food name and price
+
+2. change - change the 3 dots to new icon for category
+
+3. fixed - delivery address street number is missing
+
+4. fixed - map marker to use the lat and long when choosing address from map
+
+5. fixed - backslashes in category name
+
+6. fixed - open, close and pre order tag on search results and browse resto
+
+7. fixed - 2 flavor 
+
+8. fixed - delivery fee showing as false
+
+9. new - add options to choose between saving the cart on db or in device
+
+10. new - add auto refresh on track order page and map
+
+change table
+
+1.  add new fields on table order_delivery_address
+formatted_address, google_lat , google_lng
+
+
+
+TRUNCATE TABLE `mt_order_history`;
+TRUNCATE TABLE `mt_driver_task` ;
+TRUNCATE TABLE `mt_order` ;
+TRUNCATE TABLE `mt_order_delivery_address` ;
+TRUNCATE TABLE `mt_order_details` ;
+TRUNCATE TABLE `mt_order_history` ;
+TRUNCATE TABLE `mt_driver_pushlog` ;
+TRUNCATE TABLE `mt_mobile_push_logs` ;
+TRUNCATE TABLE  mt_driver_assignment;
+TRUNCATE TABLE  mt_payment_order;
+ALTER TABLE mt_driver_task  AUTO_INCREMENT = 100000;
+
+
+https://gyazo.com/89b232aee3ebedbf7b5bbcbf35d707cd
+
+http://screencast.com/t/h3B06bknB5f
+
+http://mercadopago.github.io/px-hybrid/
+https://github.com/mercadopago/px-hybrid
+
+http://mercadopago.github.io/px-hybrid/
+https://www.npmjs.com/package/react-native-mercadopago
+
+
+error on map alert
+
+http://imgur.com/a/UOh1W
+
+also, can we or how to disable food item images in mobile app?
+ and simply list the food items in the format as this:
+  (with food item name on the left and price on the right):
+https://gyazo.com/bf0326fdf81e1e711205e93faccf0e44
+
+
+
+That is great! how hard is to make it similar to these? see below screenshots:
+https://gyazo.com/278a41cc1911598f8835a07c56440767 https://gyazo.com/984b9ba238125c91e96753e37e12a28f
+
+customers might not know what the 3 dots do…
+
+
+maps problem…see screenshot, http://screencast.com/t/9w4bZdBWNUEp
+
+
+auto refresh driver track
+
+
+Hi, Basti,
+
+There are escape backslashes showing on mobile app category names (not on web version):
+https://gyazo.com/45831ab14e5943c74aead245c67a090c
+
+actionMenuCategory()
+
+
+Can you fix that? Thanks
+
+open and close bug
+
+If i uncheck Disabled single food item auto add to cart?
+http://prntscr.com/cogfz4 On web work I can choose size or Addon Item.
+ But On mobile I cannot choose size or Addon Item. Previous version it ok. How to fix?
+
+Thank you.
+
+https://drive.google.com/file/d/0B2xxiQEGeS68TFU3d0piZmo3dVU/view?usp=sharing
+
+Wouldnt the google+ login come on the update for mobile app?
+
+
+In my case 500+ users using installed 1.3.3 in play store if i update the mobile app module to 1.3.4, the users with ver 1.3.3 their cart shows as empty.. even though i update the app to version 1.3.4 some user may update or some user may not update. what i m saying is users with 1.3.3 gets affected with 1.3.4 app module..thats loss of business pls release a fix in such a way that users with 1.3.3 doesnt get affected
+
+
+if it works, it will only for the one u have just ordered. or if it works on the older ones, 
+it will shows the items that u have just ordered (latest), not the intended ones.
+
+or this issue only on my app/server?
+
+for cart items storing in database: i think this new implement in using the database in storing the
+ cart items will cause a higher workload for the server. pls give an option to choose
+  wether to use local storage or server base. cart is missing issue only occured when using shared hosting i think

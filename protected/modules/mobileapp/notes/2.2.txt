@@ -1,0 +1,138 @@
+fixed - creating table mobile_pages not creating auto increment
+fixed - getting of location accuracy 
+fixed - get pages content not showing
+fixed - update pages with language fields in update db
+fixed - delivery address not saving properly when using search by location
+fixed - save only card type if payment type is pay on delivery
+fixed - clear cart
+fixed - lazy load limit the records by 50
+fixed - voucher not showing on receipt
+fixed - combined cart not showing properly in receipt
+update - plugin cordova-plugin-camera to 2.4.1
+update - plugn cordova.plugins.diagnostic to 3.7.1
+
+use facebook cordova plugin
+
+Cheers Brother, I haven’t update yet but I didn’t see you mentioned
+ anything about saving credit card payment for stripe, customers hate doing the same steps 
+ everytime in apps especially when they’re hungry.
+
+clear cart not working when saved to db
+
+lazy load issue :(
+
+if on the initial screen I select the neighborhood X but before finalizing the request I 
+change it to the neighborhood Y on the receipt it shows the 2 
+neighborhoods what was selected at the beginning and what was selected after it does not clean the previous neighborhood
+
+
+1- Select payment with card and logo the flag ok 
+2 – mute for cash payment option and finish the order 
+3- On receipt I get payment in cash and the banbeira that I had selected http://prntscr.com/h7ukym
+
+Los Angeles, CA, United States
+
+
+HI Basti, when Voucher applied, the receipt on email 
+doesn’t show voucher discount or final reduced amount ( order placed on web /app both)
+
+https://stripe.com/docs/saving-cards
+
+https://www.npmjs.com/package/cordova-plugin-camera
+https://github.com/apache/cordova-plugin-camera
+
+(
+		select concat(street,' ',area_name,' ',city,' ',state,' ',zipcode )
+		from
+		{{order_delivery_address}}
+		where
+		order_id=a.order_id
+		limit 0,1
+		) as client_full
+		
+		
+
+https://github.com/fogfish/cordova-plugin-googlemaps/tree/v1.4.5-iOS11
+
+https://www.npmjs.com/package/cordova-plugin-googlemaps
+https://github.com/mapsplugin/cordova-plugin-googlemaps
+
+https://github.com/mapsplugin/cordova-plugin-googlemaps/issues/1766
+https://github.com/fogfish/cordova-plugin-googlemaps/tree/v1.4.5-iOS11
+
+<gap:plugin name="cordova-plugin-googlemaps-plus" source="npm" >
+       <param name="API_KEY_FOR_ANDROID" value="AIzaSyDGgmKuzW3fgb89TBX1z0KY5rgHVqN5HOc" />
+       <param name="API_KEY_FOR_IOS" value="AIzaSyDIVbU8cxG-BfebFSqmpAMy0NoW9HM3Bw8" />
+       <param name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Karenderia wants to use your location" />
+       <param name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Karenderia want to always use your location" />
+    </gap:plugin>
+    
+    
+https://github.com/mapsplugin/cordova-plugin-googlemaps-doc/blob/master/v2.0.0/class/Map/README.md
+
+MAP CHANGES
+
+//map.setCenter(GOOGLE);
+//map.setZoom(17);
+
+map.setCameraTarget(GOOGLE);
+map.setCameraZoom(17);
+
+//map.setBackgroundColor('white');
+plugin.google.maps.environment.setBackgroundColor("white");
+
+
+map.addPolyline not working in ios 11
+
+
+remove
+mollie
+Ipay88
+moneris
+sms libonet
+ipay
+pi pay
+hubtel sms
+hubtel payment
+extra delivery charges
+
+
+truncate table mt_order;
+truncate table mt_order_delivery_address;
+truncate table mt_order_details;
+truncate table mt_order_history;
+truncate table mt_points_earn;
+truncate table mt_points_expenses;
+truncate table mt_payment_order;
+truncate table mt_sms_broadcast_details;
+truncate table mt_email_logs;
+truncate table mt_mobile_push_logs;
+truncate table mt_email_logs;
+truncate table mt_sms_broadcast_details;
+truncate table mt_bookingtable;
+truncate table mt_package_trans;
+truncate table mt_withdrawal;
+truncate table mt_invoice;
+truncate table mt_bookingtable_history;
+truncate table mt_driver_task;
+truncate table mt_driver_assignment;
+truncate table mt_mobile_merchant_pushlogs;
+truncate table mt_sms_package_trans;		
+
+
+http://a368.phobos.apple.com/us/r30/Purple128/v4/46/5e/8b/465e8b32-933a-0814-7c64-95c14e74e094/attachment-435085274125627228Screenshot-1113-070628.png?downloadKey3=1510786180_670ea59108f9adc0cacd429547fbf191
+
+
+<gap:plugin name="cordova-plugin-camera" source="npm" spec="2.4.0" />
+<gap:plugin name="cordova.plugins.diagnostic" source="npm" spec="3.4.2" />	
+
+https://stackoverflow.com/questions/34990540/ajax-call-monitor-if-it-is-taking-long-time
+https://stackoverflow.com/questions/23691167/run-function-if-jquery-ajax-waiting-for-respond-long-enough
+
+8000
+ajax_lazy
+
+https://community.onsen.io/topic/339/ons-lazy-repeat-error-in-onsenui-2/4
+
+
+https://github.com/danwilson/google-analytics-plugin/issues/304

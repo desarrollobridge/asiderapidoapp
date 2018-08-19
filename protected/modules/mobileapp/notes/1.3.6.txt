@@ -1,0 +1,135 @@
+
+1. fixed math functions for 2 flavors
+2. fixed plugin outdated in config.xml
+3. fixed edit cart not working
+4. fixed error message no connection to toast instead of alert
+6. fixed - address fields not translating
+10. fixed - slashes in merchant name
+11. fixed - disabled ordering from admin settings
+12. fixed - choosing address from map which firing api calls twice
+13. fixed - default delivery address
+14. fixed - distance unit when address is very close
+15. fixed - get location in android 6.0
+16. new - add new plugin diagnostic
+7. new - add tips
+8. new - add offline bank deposit payment
+9 new - add offline credit card
+5. new - add event listener for connection lost
+
+https://www.npmjs.com/package/cordova-plugin-braintree
+
+https://phonegappro.com/tutorials/upload-images-to-server-using-phonegap-file-transfer-plugin/
+
+Hi Basti thanks for the great work. Is there a quick fix for tip option ?
+
+add offline bank deposit
+add offline credit card
+
+
+
+TRUNCATE TABLE `mt_order_history`;
+TRUNCATE TABLE `mt_driver_task` ;
+TRUNCATE TABLE `mt_order` ;
+TRUNCATE TABLE `mt_order_delivery_address` ;
+TRUNCATE TABLE `mt_order_details` ;
+TRUNCATE TABLE `mt_order_history` ;
+TRUNCATE TABLE `mt_driver_pushlog` ;
+TRUNCATE TABLE `mt_mobile_push_logs` ;
+TRUNCATE TABLE  mt_driver_assignment;
+TRUNCATE TABLE  mt_payment_order;
+Truncate table  mt_mobile_temp_email;
+ALTER TABLE mt_driver_task  AUTO_INCREMENT = 100000;
+
+
+When you search for restaurant and filter into “Pickup only”, result dont show restaurants that do “Delivery & Pickup”. The Same for Delivery.
+
+http://docs.phonegap.com/phonegap-build/configuring/preferences/#android-minSdkVersion
+https://developer.android.com/guide/topics/manifest/uses-sdk-element.html
+
+4. http://prntscr.com/cv9ll2 Can you add “search for address” and “Current location” 
+like this https://goo.gl/jDcn6L Some order user want to send food to friend or family address
+
+5.Can You fix about search some word that I told you before http://prnt.sc/cnntca http://prntscr.com/cv9qsd
+
+https://github.com/ubilabs/geocomplete/issues/246
+
+.pac-container {
+     pointer-events:auto;
+}
+
+
+
+i have a suggestion for this issue
+
+1. let user point the correct location first
+
+2. user confirm the location by pressing a confirm button -> call the geocoding api and show the address
+
+3. when geocoding success, another button (use this address button) will be showing up, else: error message ->geocoding failed, pls enter the address manually
+
+location works if accuracy is set to false using gps
+
+When you search for restaurant and filter into “Pickup only”, result dont show restaurants that do “Delivery & Pickup”. The Same for Delivery.
+
+
+You just need to add enableHighAccuracy: true, maximumAge: 60000 and then reboot your device.
+Give it high enough timeout, from my experience 20000 is more than enough.
+
+http://stackoverflow.com/questions/31095705/how-to-get-the-full-street-address-via-the-geocoder-gem
+http://stackoverflow.com/questions/20371949/getting-the-street-address-from-a-google-maps-geocode-call
+https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
+
+
+case "signup":
+validateCLient
+
+http://stackoverflow.com/questions/19491875/phonegap-cordova-geolocation-not-working-on-android
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+https://www.npmjs.com/package/cordova-plugin-android-permissions
+
+https://github.com/NeoLSN/cordova-plugin-android-permission
+
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+http://stackoverflow.com/questions/23383750/phonegap-geolocation-sometimes-not-working-on-android
+https://github.com/dpa99c/cordova-diagnostic-plugin/issues/19
+
+<platform name="android">
+    <plugin name="cordova-custom-config" version="*"/>
+    <config-file target="AndroidManifest.xml" parent="/*">
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    </config-file>
+</platform>
+
+https://www.npmjs.com/package/cordova.plugins.diagnostic
+https://github.com/dpa99c/cordova-diagnostic-plugin
+https://github.com/dpa99c/cordova-diagnostic-plugin#requestlocationauthorization
+
+https://github.com/Code1Tech/cordova-diagnostic-plugin
+
+
+2. http://prntscr.com/cz0wfw Phone and delivery instructions not save. 
+see vdo https://drive.google.com/file/d/0B8i71u7B3lHfdzNEM3BkRXVqbXc/view?usp=sharing
+
+Can you add default address like picture here http://prntscr.com/cz0wfw
+
+
+Friend,
+
+When will the client app update be released? I am waiting for this update to fix a problem when I select 2 flavors of the pizza and an additional type the edge of the pizza. In the end it does not calculate the border.
+
+Example: 1 side: 30 $ - 2 side: 33 $: and border 1: 10 $ real = 33 $ pizza + 10 $ border = 43 $
+
+Today the APP is not flipping the border, getting only $ 33.
+
+I think you already have this problem to correct.

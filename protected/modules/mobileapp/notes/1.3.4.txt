@@ -1,0 +1,269 @@
+
+1. fixed search sorting
+2. fixed open and pre order tag
+3. fixed decimal place if set to zero format is not working
+4. fixed default address not saving
+5. fixed menu
+6. fixed category name does not translate
+//7. fixed paypal crashing on ios 9
+8. change plugin for enabling gps
+9. fixed - remove cash on delivery available if turn off by admin 
+10. fixed paypal payment not processable error
+11. fixed pay delivery merchant membership payment list
+12. update font awesome to 4.6.3 
+13. fixed delivery fee on search results
+14. add distance,delivery distance and delivery estimation in search results
+15. new - add razorpay payment provider
+16. new - saved the cart on database instead on device
+17. new - change loader 
+18. new - add easy access for category
+19. new - add filter by restaurant name in search result page
+20. new - add pop over menu on restaurant page
+21. new - add new page for map with map directions
+22. new - add custom fields customer signup
+23. new - add terms & condition on customer signup
+24. new - add mobile auto country code prefix
+25. fixed - earn points not adding when creating account
+26. fixed - earn points by review
+27. fixed - earn points on first order
+28. new - driver app auto insert task
+29 fixed - iso badge not being clear
+30 new - add customer verification page
+31 new - allow the customer to see the menu even if merchatn is closed
+32 new - voucher can not be applied if the merchant has an offer to avoid double discount
+33 fixed - change rating text field to stars
+34 fixed - book a table mobile phone to have country code prefix
+35 new - add deliver asap checkbox button
+36 new - add track your order 
+37.new - track driver on map
+38 new - add enter contact number if customer contact number is empty during checkout
+pickup transaction
+39 new - add push sound to notification
+
+================================================================================
+
+TABLE CHANGES
+
+= add new table mt_mobile_cart
+
+
+
+truncate table mt_order;
+truncate table mt_order_details;
+truncate table mt_order_delivery_address;
+truncate table mt_order_history;
+
+
+
+
+TRUNCATE TABLE `mt_order_history`;
+TRUNCATE TABLE `mt_driver_task` ;
+TRUNCATE TABLE `mt_order` ;
+TRUNCATE TABLE `mt_order_delivery_address` ;
+TRUNCATE TABLE `mt_order_details` ;
+TRUNCATE TABLE `mt_order_history` ;
+TRUNCATE TABLE `mt_driver_pushlog` ;
+TRUNCATE TABLE `mt_mobile_push_logs` ;
+TRUNCATE TABLE  mt_driver_assignment;
+TRUNCATE TABLE  mt_payment_order;
+ALTER TABLE mt_driver_task  AUTO_INCREMENT = 100000;
+
+https://github.com/mapsplugin/cordova-plugin-googlemaps/wiki/marker
+
+
+i have added “Date of Birth’ as Registration custom fields and now it appears on 
+the website while registration. However, while creating an account through mobile app, 
+“Date of Birth” filed does not appear at all. Please suggest me what to do??
+
+
+add delivery fee on search result
+
+
+Bug: When creating account on phone with phone verification, and then placing first order, the phone number that you have verified doesn’t show automatically on the page where you need to write the shipping address
+
+
+Loyalty points is enabled, but when customer places a review he doesn’t earn points but if he places review on website he earns points…
+Same for creating account, doesn’t work on mobile
+Same for first order
+
+
+
+Does this fix also contain the Iphone push notification bug? (where the 2 push notification badge doesn’t leave)
+ and where the popup doesn’t show inside the app.
+(on android everything is working fine!)
+
+
+SUggestion
+4. just suggestions for next update: 
+4.1 star rating: entering number 1 to 5 is not as nice as having an images of 
+5 grey stars for users to tape and rate number of star they want.
+
+ 4.2 improve visibility of the election box for delivery option and 
+ payment option so users easily know there is an option for them to choose. 
+ currently is deepen in the white app background.
+
+
+there is a problem in verificating a new account on the mobile app.
+after new user sending the registration form, they will be redirected to the verification page to enter the code they received on their email ( I have not tried the mobile phone verification). usually user need to close the app first to retrieve the code from their email app. when reopening the app again, the verification page has gone. there seems nowhere to find the verification page on the app.
+
+
+allow the customer to see the menu even if
+merchatn is closed
+
+
+https://razorpay.com/integrations/
+
+1. there must be a retriction on customer for using a voucher. it is the voucher can not be applied if the merchant 
+has an offer. this will avoid a double discount.
+
+2. if the merchant has an offer of free delivery on order over certain amount, and the customer order is reaching the condition, so the customer will not be able to apply any voucher
+
+
+Yes, this function you have one here.
+ https://drive.google.com/file/d/0B8i71u7B3lHfOXp2bXR2Q3dhVWs/view?usp=sharing
+ but 
+ easier for user if you can move here
+  http://prntscr.com/bruaot same web https://drive.google.com/file/d/0B8i71u7B3lHfY3dCay04enRsWWM/view?usp=sharing
+
+Thanks
+
+
+I have enabled, google capache on sign up form, and also i have made one custom coloum , in admin setting, 
+for custom field, After that i can see custom field in signup in website, But do not see 
+in customer mobile app, Please let me know what i need to do to see effect on mobile apps also ,
+ Even i updated the database in admin and customer app option Both . Thanks
+
+
+For mobile app update, pls add feature to view direction to the merchant location (google map navigation).
+ For review feature, add function for merchant to be able to response to each review. Sorry i ask this in this item
+
+
+no problem. pls just solve the verification issue first since that is very important. clicking a link on email for verification would solve the issue instead of copying the code and put it back to the app. i don’t know if u still remember this issue since this issue has been arround for months
+
+
+while u are working to implement other buyers feature requests, maybe i may request one too.
+ that is a view direction feature from the customer location to the restaurant
+ (like the driver app). a floating action button over the map canvas (on merchant info) would be nice for this purpose.
+
+
+
+Sure, see below:
+1) from Seamless App https://gyazo.com/278a41cc1911598f8835a07c56440767 https://gyazo.com/984b9ba238125c91e96753e37e12a28f https://gyazo.com/2673f1e2307c41be156bae4f94c066f4
+
+2) beyond menu app:
+https://gyazo.com/b66aed6e8885d8af95db98731321d3bf
+
+You can try all these apps in Android or iOS phones: Seamless, Grubhub, beyondmenu, eat24, etc.. they are working in very similar way on that. which is the best way in term of mobile users. (less click, less pages back and forth).
+
+
+
+
+Sure, see below:
+1) from Seamless App https://gyazo.com/278a41cc1911598f8835a07c56440767 https://gyazo.com/984b9ba238125c91e96753e37e12a28f https://gyazo.com/2673f1e2307c41be156bae4f94c066f4
+
+2) beyond menu app:
+https://gyazo.com/b66aed6e8885d8af95db98731321d3bf
+
+You can try all these apps in Android or iOS phones: Seamless, Grubhub, beyondmenu, eat24, etc.. they are working in very similar way on that. which is the best way in term of mobile users. (less click, less pages back and forth).
+
+Thanks
+
+
+
+2) http://s22.postimg.org/mucvoscv5/app2.jpg Inside mobile app, theres no option for ASAP/NOW option delivery, where i think this button is a must. How do i enable ASAP/NOW option, since this option is enable at website version
+
+
+<ons-list>
+          <ons-list-item class="list__item--tappable list__item__line-height" >One</ons-list-item>                   
+          <ons-list-item class="list__item--tappable list__item__line-height" >two</ons-list-item>
+          <ons-list-item class="list__item--tappable list__item__line-height" >3</ons-list-item>
+          <ons-list-item class="list__item--tappable list__item__line-height" >4</ons-list-item>
+          <ons-list-item class="list__item--tappable list__item__line-height" >5</ons-list-item>
+        </ons-list>
+        
+        
+<button class="select-addressbook button button--quiet green" onclick="popUpAddressBook();" >
+   <span class="trn" data-trn-key="select_from_address">Select from your address book</span>
+   <ons-icon icon="ion-ios-location-outline"></ons-icon>
+   </button> 
+   
+   
+ <ons-list>
+       
+       <ons-list-item  > 
+       <span class="trn" data-trn-key="delivery_address">Delivery Address</span>
+       <p class="small-font-dim">Guadalupe makati city</p>
+       </ons-list-item>    
+       
+   </ons-list>
+      
+<ons-list-item modifier="chevron" class="select-addressbook" onclick="popUpAddressBook();" > 
+       <span class="trn" data-trn-key="select_from_address">Select from your address book</span>       
+       </ons-list-item>    
+       
+       <ons-list-item modifier="chevron" > 
+       <span class="trn" data-trn-key="select_from_address_map">Select your address from map</span>
+       </ons-list-item>    
+       
+       <ons-list-item modifier="chevron" > 
+       <span class="trn" data-trn-key="enter_your_address">Enter your address</span>
+       </ons-list-item>    
+       
+       
+       
+address
+
+
+
+<div class="wrapper">
+  <div class="field-wrapper">
+  <input type="text" name="street"  class="street text-input text-input--underbar has_validation" 
+  placeholder="Street" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" >
+  </div>      
+</div>      
+<div class="wrapper">
+  <div class="field-wrapper">
+  <input type="text" name="city"  class="city text-input text-input--underbar has_validation" 
+  placeholder="City" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" >
+  </div>      
+</div>
+<div class="wrapper">
+  <div class="field-wrapper">
+  <input type="text" name="state"  class="state text-input text-input--underbar has_validation" 
+  placeholder="State" value="" data-validation="required" data-validation-error-msg="this field is mandatory!" >
+  </div>      
+</div>
+<div class="wrapper">
+  <div class="field-wrapper">
+  <input type="text" name="zipcode"  class="zipcode text-input text-input--underbar" 
+  placeholder="Postal code/Zip Code" value=""  >
+  </div>      
+</div>
+
+
+<gap:plugin name="cordova-plugin-googlemaps"  source="npm"  >
+	   <param name="API_KEY_FOR_ANDROID" value="AIzaSyDGgmKuzW3fgb89TBX1z0KY5rgHVqN5HOc" />
+	   <param name="API_KEY_FOR_IOS" value="AIzaSyDIVbU8cxG-BfebFSqmpAMy0NoW9HM3Bw8" />
+	</gap:plugin>
+	
+	
+<gap:plugin spec="https://github.com/mapsplugin/cordova-plugin-googlemaps.git" source="git" >
+       <param name="API_KEY_FOR_ANDROID" value="AIzaSyDGgmKuzW3fgb89TBX1z0KY5rgHVqN5HOc" />
+       <param name="API_KEY_FOR_IOS" value="AIzaSyDIVbU8cxG-BfebFSqmpAMy0NoW9HM3Bw8" />
+    </gap:plugin>
+    
+<gap:plugin name="cordova-plugin-googlemaps"  source="npm"  >
+	   <param name="API_KEY_FOR_ANDROID" value="xxx" />
+	   <param name="API_KEY_FOR_IOS" value="xxx" />
+	</gap:plugin>    
+	
+
+<gap:plugin spec="https://github.com/mapsplugin/cordova-plugin-googlemaps.git" source="git" >
+       <param name="API_KEY_FOR_ANDROID" value="xxx" />
+       <param name="API_KEY_FOR_IOS" value="xxx" />
+    </gap:plugin>	
+    
+    
+Hello Basti, Can you please confirm the type which we need to select while creating API as i think google has changed something again. If we choose web server then it asks for IP and as we are using shared server how can we populate IP? Does it works if we select HTTP.
+
+khalilanjum

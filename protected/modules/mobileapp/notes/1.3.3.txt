@@ -1,0 +1,146 @@
+1. fixed description of food item removing html tags
+2. fixed geo coding geodecodeAddress
+3. fixed pre order condition
+4. fixed push notification not saving correct sender id if merchant change the order status
+5. fixed if merchant has only pickup services
+6. fixed default order status (not tested)
+
+10. fixed paypal not showing on payment list
+15. fixed - voucher
+17. fixed - fb login with admin settings on/off
+18. fixed - cuisine translation
+20  fixed minimum and maximum order delivery/pickup
+23 fixed - back button that exit the app
+24 fixed - voucher expiration on same day
+
+7. change - saving of translation functions
+8. change -  getting of distance to new functions
+9. change - getting of delivery fee to new functions
+
+11. new - save address book during checkout
+12. new - auto add to cart if the food item has no addon
+13. new - add click functions on ratings stars
+14. new - add mobile and email verification during signup
+
+16. new - add loyalty points 
+
+19. new - add device id on settings
+21 new - add api hash key to secure the mobile app api
+21 new - check if gps is enabled
+22 new - add device id on settings
+25 new - add image loaded
+26 new - add profile picture
+====================================================================================
+
+TABLE CHANGES
+1. mt_mobile_registered add new fields = status
+
+====================================================================================
+
+merchant push 
+public static function pushNewOrder($order_id='')
+
+voucher bugs : 1. 
+when i set voucher code on Expiration until today it’s can’t use on mobile but can use on web. the voucher can use on mobile apps if the Expiration until tomorrow. 
+
+2. without checklist tick of “Used only once”, the voucher only can use once.
+3. Voucher Decimal Separators always show on merchant/admin side (how to remove that ?)
+
+order bugs : 1. when i set min order on merchant side min order is $10 and max order is $50 it’s should be work if i place order with subtotal $10 or $50. but now it’s only can working over $10($11) and below $50 (&49). this issue only happened on mobile apps.
+
+   timeFormat: 'hh:ii A',
+   
+   
+ERROR
+loyalty points
+
+When we have the fix for the problem items with two or more flavors?
+
+Add password to the API call
+
+if (Yii::app()->hasModule('pointsprogram')){
+
+http://i.imgur.com/vn1o4Km.png
+
+hey basti, its very difficult for users to find out how to 
+post a review on mobile app. can you give a link to post a review 
+on the stars present on Restaurant profile .
+
+
+sine you are updating new apps, please add the advanced search function 
+to let people search either by address, or restaurant, or cuisine or 
+even by food item. also pls make loyalty point available for mobile app too.
+ thanks for new theme update, it’s really great work!!!
+
+ 
+https://github.com/Wizcorp/phonegap-facebook-plugin
+https://www.npmjs.com/package/im-facebook-phonegap-plugin
+https://www.npmjs.com/package/cordova-plugin-android-gpsdetect
+
+https://www.npmjs.com/package/cordova-plugin-facebook4
+
+https://github.com/chrisben/imgcache.js
+http://desandro.github.io/imagesloaded/
+
+https://github.com/yoav-zibin/phonegap-tictactoe/blob/gh-pages/www/config.xml
+https://ionicthemes.com/tutorials/about/native-facebook-login-with-ionic-framework
+http://www.sitepoint.com/working-with-the-facebook-api-in-a-cordova-app/
+
+http://i.imgur.com/5rU1fnI.png
+
+2) whn will be loyalty points available on app 
+3) sms verification ..much needed.
+
+hey basti waiting for vouchers,
+mobile verification and loyalty points for mobile app
+
+
+Truncate table mt_order;
+Truncate table mt_order_delivery_address;
+Truncate table mt_order_details;
+Truncate table mt_order_history;
+Truncate table mt_payment_order;
+Truncate table mt_mobile_temp_email;
+Truncate table mt_points_earn;
+Truncate table mt_points_expenses;
+
+
+website_enabled_mobile_verification  = yes
+
+theme_enabled_email_verification = 2
+
+actionSignup
+case "signup":
+
+saveEarnPoints
+
+check merchant commission settings for payment gateway
+
+6011000000000012
+4242424242424242
+
+setStorage("pts",data.details.settings.pts);
+
+getStorage("cart_currency_symbol")
+prettyPrice
+
+keytool -exportcert -alias androiddebugkey -keystore mcdfood.keystore | "D:\OpenSSL-Win64\bin\openssl.exe" sha1 -binary | "D:\OpenSSL-Win64\bin\openssl.exe" base64
+
+http://community.phonegap.com/nitobi/topics/default-activity-class-name
+http://stackoverflow.com/questions/17997702/facebook-integration-for-a-phonegap-app
+
+http://cordova.apache.org/plugins/?q=cordova-plugin-fastrde-checkgps
+https://www.npmjs.com/package/cordova-plugin-fastrde-checkgps
+https://github.com/fastrde/cordova-plugin-fastrde-checkgps
+
+https://github.com/rodrigo-martinezd/cordova-dialog-gps
+
+<gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" >
+    <param name="APP_ID" value="1505618116376825" />
+    <param name="APP_NAME" value="Tic Tac Toe" />
+</gap:plugin>
+
+
+http://willowsystems.github.io/jSignature/#/about/
+
+http://projects.lukehaas.me/css-loaders/

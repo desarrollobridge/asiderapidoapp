@@ -1,0 +1,10 @@
+
+1. add translation features
+2. add push notification broadcast
+3. add IOS push notification
+4. add apply voucher
+5. fixed re-order item if the order was done on website
+
+database
+- add new table mobile_broadcast
+- add new field on mobile_push_logs = broadcast_id
