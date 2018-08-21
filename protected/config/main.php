@@ -43,7 +43,7 @@ return array(
 		'application.modules.driver.components.*',
 	),
 	
-	'language'=>'en',
+	'language'=>'es',//se cambia la etiqueta del idioma y se coloca por defecto en Español
 	
 	'params'=>array(	   
 	   'validate_request_session'=>true,
@@ -157,7 +157,7 @@ function statusList()
 function clientStatus()
 {
 	return array(
-	  'pending'=>Yii::t("default",'pendiente por aprobación'),
+	 'pending'=>Yii::t("default",'pendiente por aprobación'),
 	 'active'=>Yii::t("default",'activo'),	 
 	 'suspended'=>Yii::t("default",'suspendido'),
 	 'blocked'=>Yii::t("default",'bloqueado'),
